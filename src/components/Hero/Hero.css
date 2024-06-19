@@ -1,0 +1,129 @@
+.hero-wrapper {
+  color: white;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 2rem;
+}
+
+
+.hero-container {
+  justify-content: space-around;
+  align-items: flex-end; 
+}
+
+/* left side */
+.hero-left {
+  gap: 3rem;
+}
+.hero-title {
+  position: relative;
+  z-index: 1;
+}
+.hero-title > h1 {
+  font-weight: 650;
+  font-size: 4.4rem;
+  line-height: 4.3rem;
+}
+
+.orange-star {
+  text-align: center;
+  display: inline-block; 
+  position: absolute;
+  width: 30%;
+  right: 13%;
+  top: -9%;
+  z-index: -1;
+} 
+
+.flexhero-des{
+gap: 2rem;
+}
+.flexhero-des >h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 1000;
+  font-style: italic;
+  font-size: 20px;
+}
+.flexhero-des > span {
+  font-family: "Playwrite SK", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  color: white;
+}
+
+.search-bar {
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid rgba(120, 120, 120, 0.374);
+  padding: 0.5rem 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.search-bar > input {
+  border: none;
+  outline: none;
+}
+.stats {
+  width: 100%;
+  justify-content: space-between;
+}
+.stat > :nth-child(1) {
+  font-size: 2rem;
+}
+.stat > :nth-child(1) > :last-child {
+  color: orange;
+}
+/* right side */
+
+.image-container {
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  border: 8px solid rgba(255, 255, 255, 0.12);
+}
+.image-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* mobile screens */
+@media (max-width: 640px) {
+  .hero-container {
+    margin-top: 2rem;
+  }
+  .hero-title > h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .orange-star {
+    right: 13%;
+    top: -6%;
+    z-index: -1;
+    width: 30%;
+  } 
+  .flexhero-des > span {
+    font-family: "Playwrite SK", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+  }
+  .image-container {
+    width: 95%;
+    height: 25rem;
+  }
+  .stats {
+    justify-content: center;
+    gap: 1.5rem;
+    font-weight: wrap;
+  }
+  .stat > :nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .stat > :nth-child(2) {
+    font-size: 0.8rem;
+  }
+}

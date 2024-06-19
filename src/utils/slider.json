@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Homeowners & Real Estate Developers",
+    "detail": "Looking for smart home automation solutions to enhance security, convenience, and energy efficiency.",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Businesses and Enterprises",
+    "detail": "In need of custom software development, IoT solutions, and embedded systems to optimize operations and innovate their product offerings.",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Tech Enthusiasts and Professionals",
+    "price": "35,853",
+    "detail": "Seeking to acquire new IT skills and stay updated with the latest technological advancements.",
+    "image": "./r3.png"
+  },
+  {
+    "name": "General Consumers",
+    "detail": "Interested in high-quality merchandise that complements their tech-savvy lifestyle.",
+    "image": "./r1.png"
+  }
+]
