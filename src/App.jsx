@@ -1,32 +1,22 @@
-import "./App.css";
-import React from 'react'
-import Companies from "./components/Companies/Companies";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import GetStarted from "./components/GetStarted/GetStarted";
-import Header from "./components/Header/Header";
-import Hero from "./components/Hero/Hero";
-import Residencies from "./components/Residencies/Residencies";
-import Value from "./components/Value/Value";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Layout";
+import WebsiteAb from "./pages/About/WebsiteAb";
+import WebsiteCon from "./pages/Contact/WebsiteCon";
+import ServiceDetail from "./pages/Services/ServiceDetail";
+import Home from "./pages/Home";
 
-
-function App() {
+export default function App() {
   return (
-    <div className="App">
-    <div>
-      <div className="white-gradient" />
-      <Header />
-      <Hero />
-    </div>
-    <Companies />
-    <Residencies/>
-    <Value/>
-    <Contact/>
-    <GetStarted/>
-    <Footer/>
-  </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="about" element={<WebsiteAb />} />
+          <Route path="contact" element={<WebsiteCon />} />
+          <Route path="service/:id" element={<ServiceDetail />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
-

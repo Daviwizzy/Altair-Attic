@@ -1,8 +1,8 @@
 .hero-wrapper {
-  color: white;
   position: relative;
   z-index: 1;
   padding-bottom: 2rem;
+  /* margin-top: 10px; */
 }
 
 
@@ -14,24 +14,42 @@
 /* left side */
 .hero-left {
   gap: 3rem;
+  padding-bottom: 40px;
 }
 .hero-title {
   position: relative;
   z-index: 1;
 }
-.hero-title > h1 {
-  font-weight: 650;
-  font-size: 4.4rem;
+.hero-title > h2 {
+  background: linear-gradient(180deg, rgba(61,162,254,1) 20%, rgba(70,186,255,1) 38%, rgba(86,163,214,1) 62%, rgba(9,154,254,1) 73%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent; /* Standard property to ensure compatibility */
+  font-weight: 600;
+  font-size: 4rem;
   line-height: 4.3rem;
 }
 
-.orange-star {
+
+.hero-title > h1 {
+  color: rgb(0, 119, 255);
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 4.3rem;
+}
+
+.h-img{
+  width: 300px;
+}
+
+.star {
   text-align: center;
   display: inline-block; 
   position: absolute;
-  width: 30%;
-  right: 13%;
-  top: -9%;
+  width: 10%;
+  right: -1%;
+  top: 3%;
   z-index: -1;
 } 
 
@@ -45,15 +63,16 @@ gap: 2rem;
   font-size: 20px;
 }
 .flexhero-des > span {
-  font-family: "Playwrite SK", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
-  color: white;
+  /* font-family: "Playwrite SK", cursive;
+  font-optical-sizing: auto; */
+  font-weight: 500;
+  font-style: italic;
+  font-size: 19px;
+  color: #324044;
+  display: none;
 }
 
-.search-bar {
+/* .search-bar {
   background-color: white;
   border-radius: 5px;
   border: 3px solid rgba(120, 120, 120, 0.374);
@@ -74,12 +93,19 @@ gap: 2rem;
 }
 .stat > :nth-child(1) > :last-child {
   color: orange;
-}
+} */
 /* right side */
-
 .image-container {
   width: 30rem;
   height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  border: 8px solid rgba(255, 255, 255, 0.12);
+}
+
+.image-containers {
+  width: 20rem;
+  height: 25rem;
   overflow: hidden;
   border-radius: 15rem 15rem 0 0;
   border: 8px solid rgba(255, 255, 255, 0.12);
@@ -88,21 +114,29 @@ gap: 2rem;
   width: 100%;
   height: 100%;
 }
+.image-containers > img {
+  width: 100%;
+  height: 100%;
+}
 
 /* mobile screens */
 @media (max-width: 640px) {
   .hero-container {
-    margin-top: 2rem;
+    margin-top: 3rem;
+  }
+  .hero-left {
+    margin-top: auto;
+    gap: 2rem;
   }
   .hero-title > h1 {
     font-size: 2.5rem;
     line-height: 3rem;
   }
-  .orange-star {
-    right: 13%;
+  .star {
+    right: 40%;
     top: -6%;
     z-index: -1;
-    width: 30%;
+    width: 12%;
   } 
   .flexhero-des > span {
     font-family: "Playwrite SK", cursive;

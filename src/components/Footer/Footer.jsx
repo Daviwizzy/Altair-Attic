@@ -1,30 +1,58 @@
 import React from "react";
 import "./Footer.css";
+import Logo from "/Logo2.png";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
 const Footer = () => {
   return (
-    <div className="f-wrapper">
-      <div className="paddings innerWidth flexCenter f-container">
-        {/* left side */}
-        <div className="flexColStart f-left">
-          <img src="./logo2.png" alt="" width={120} />
-          <span className="secondaryText">
-            Our vision is to make all people <br />
-            the best place to live for them.
-          </span>
-        </div>
-
-        <div className="flexColStart f-right">
-          <span className="primaryText">Information</span>
-          <span className="secondaryText">145 New York, FL 5467, USA</span>
-          <div className="flexCenter f-menu">
-            <span>Property</span>
-            <span>Services</span>
-            <span>Product</span>
-            <span>About Us</span>
+    <footer className="footer-wrapper">
+      <div className="inner-width footer-container">
+        {/* Left side */}
+        <div className="footer-left">
+          <img src={Logo} alt="Logo" className="footer-logo" />
+          <p className="footer-text">
+            Empowering your world with smart, <br />
+            innovative, and reliable tech solutions.
+          </p>
+          <div className="footer-social">
+            <a
+              href="https://facebook.com/altairattic"
+              className="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://instagram.com/altairattic"
+              className="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://linkedin.com/altairattic"
+              className="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
+
+        {/* Right side */}
+        <div className="footer-right">
+          <h3 className="footer-title">Address</h3>
+          <p className="footer-text">
+            3rd floor, E n j Supermarket Building, <br />
+            Along Oba Ademola Maternity <br />
+            Hospital, Ake, Abeokuta.
+          </p>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

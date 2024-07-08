@@ -1,21 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { BiMenuAltRight } from "react-icons/bi";
 import { getMenuStyles } from "../../utils/common";
 import useHeaderColor from "../../hooks/useHeaderColor";
 import OutsideClickHandler from "react-outside-click-handler";
 import { Link } from "react-router-dom";
+import logo from "/logo.png";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
   const headerColor = useHeaderColor();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      setIsSticky(scrollTop > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="h-wrapper" style={{ background: headerColor }}>
+    <section
+      className={`h-wrapper ${isSticky ? "sticky" : ""}`}
+      style={{ background: headerColor }}
+    >
       <div className="flexCenter innerWidth paddings h-container">
         {/* logo */}
         <Link to="/">
-          <img src="./logo.png" alt="logo" width={100} />
+          <img src={logo} alt="logo" width={100} />
         </Link>
 
         {/* menu */}
@@ -29,13 +44,9 @@ const Header = () => {
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
-            <a href="#residencies">Our Services</a>
-            <a href="#value">Our Value</a>
-            <a href="#contact-us">Contact Us</a>
-            <a href="#get-started">Get Started</a>
-            <button className="button">
-              <a href="mailto:hello@altair-attic.com">Contact</a>
-            </button>
+            <Link to="/">Home</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/Contact">Contact</Link>
           </div>
         </OutsideClickHandler>
 

@@ -1,9 +1,25 @@
 import React from "react";
 import "./Contact.css";
 import { MdCall } from "react-icons/md";
-import { BsFillChatDotsFill } from "react-icons/bs";
-import {HiChatBubbleBottomCenter} from 'react-icons/hi2'
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+
 const Contact = () => {
+  const handleCallClick = () => {
+    window.location.href = "tel:02112314514";
+  };
+
+  const handleChatClick = () => {
+    window.open("https://api.whatsapp.com/send?phone=2347077195098", "_blank");
+  };
+
+  const handleVideoCallClick = () => {
+    window.open("https://www.instagram.com/altairattic", "_blank");
+  };
+
+  const handleSmsClick = () => {
+    window.open("sms:2347077195098", "_blank");
+  };
+
   return (
     <div id="contact-us" className="c-wrapper">
       <div className="paddings innerWidth flexCenter c-container">
@@ -12,8 +28,7 @@ const Contact = () => {
           <span className="orangeText">Our Contact Us</span>
           <span className="primaryText">Easy to contact us</span>
           <span className="secondaryText">
-            We always ready to help by providijng the best services for you. We
-            beleive a good blace to live can make your life better{" "}
+            We are always ready to assist by providing the best services for you. We believe that a great environment can enhance your life.
           </span>
 
           <div className="flexColStart contactModes">
@@ -26,23 +41,27 @@ const Contact = () => {
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">+2347077195098</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call now</div>
+                <div className="flexCenter button" onClick={handleCallClick}>
+                  Call now
+                </div>
               </div>
 
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <FaWhatsapp size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Chat</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">Whatsapp</span>
+                    <span className="secondaryText">+2347077195098</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat now</div>
+                <div className="flexCenter button" onClick={handleChatClick}>
+                  Chat now
+                </div>
               </div>
             </div>
 
@@ -51,27 +70,31 @@ const Contact = () => {
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <FaInstagram size={25} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="primaryText">Instagram</span>
+                    <span className="secondaryText">Altair Attic</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call now</div>
+                <div className="flexCenter button" onClick={handleVideoCallClick}>
+                  Chat now
+                </div>
               </div>
 
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <HiChatBubbleBottomCenter size={25} />
+                    <MdCall size={25} />
                   </div>
                   <div className="flexColStart detail">
                     <span className="primaryText">Message</span>
-                    <span className="secondaryText">021 123 145 14</span>
+                    <span className="secondaryText">+2347077195098</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message now</div>
+                <div className="flexCenter button" onClick={handleSmsClick}>
+                  Message now
+                </div>
               </div>
             </div>
           </div>
@@ -80,7 +103,7 @@ const Contact = () => {
         {/* right side */}
         <div className="flexEnd c-right">
           <div className="image-container">
-            <img src="./contact.jpg" alt="" />
+            <img src="./contact.jpeg" alt="Contact us" />
           </div>
         </div>
       </div>

@@ -2,14 +2,18 @@
   z-index: 99;
   position: sticky;
   top: 0;
-  background-color: transparent;
+  background: var(--black);
 }
 .h-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: var(--secondary);
+  background: linear-gradient(
+    90deg,
+    rgba(234, 234, 243, 1) 0%,
+    rgba(192, 210, 243, 1) 35%,
+    rgba(217, 245, 251, 1) 100%
+  );
   justify-content: space-between;
-  background-color: transparent;
 }
 
 .h-menu {
@@ -17,13 +21,15 @@
 }
 .h-menu > *:hover {
   cursor: pointer;
-  color: orange
 }
 .menu-icon {
   display: none;
 }
 
 @media (max-width: 768px) {
+  .h-container {
+    margin-top: 3px;
+  }
   .menu-icon {
     display: block;
   }
@@ -35,7 +41,7 @@
     flex-direction: column;
     right: 4rem;
     top: 3rem;
-    background: white;
+    background: rgb(1, 166, 255);
     display: flex;
     border-radius: 10px;
     transition: all 200ms ease;
