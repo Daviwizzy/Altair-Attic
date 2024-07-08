@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./LayOut";
 import WebsiteAb from "./pages/About/WebsiteAb";
-
 import ServiceDetail from "./pages/Services/ServiceDetail";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact/Contact";
