@@ -1,7 +1,8 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "/Logo2.png";
+import logo from "/fLogo.png";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="inner-width footer-container">
         {/* Left side */}
         <div className="footer-left">
-          <img src={Logo} alt="Logo" className="footer-logo" />
+          <img src={logo} alt="Logo" className="footer-logo" />
           <p className="footer-text">
             Empowering your world with smart, <br />
             innovative, and reliable tech solutions.
