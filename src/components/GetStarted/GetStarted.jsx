@@ -13,7 +13,7 @@ const GetStarted = () => {
             Attractive Technology Solutions
           </span>
           <button className="button" href>
-            <Link to="/contact-me">Contact</Link>
+          <Link to="/contact">Contact Us</Link>
           </button>
         </div>
       </div>
