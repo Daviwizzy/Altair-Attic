@@ -5,6 +5,7 @@ import WebsiteAb from "./pages/About/WebsiteAb";
 import ServiceDetail from "./pages/Services/ServiceDetail";
 import Home from "./pages/Home";
 import Contact from "./pages/Contactpg/Contactpg";
+import Career from "./pages/Career/Career";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route path="about" element={<WebsiteAb />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="career" element={<Career />} />
           <Route path="service/:id" element={<ServiceDetail />} />
         </Route>
       </Routes>
