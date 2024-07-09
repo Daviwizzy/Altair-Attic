@@ -9,10 +9,10 @@ const About = () => {
       <div className="paddings innerWidth flexCenter about-container">
         {/* Left Side */}
         <div className="about-left flexColStart">
-          <span className="highlightText">About Us</span>
-          <span className="primaryText">Value We Bring to You</span>
-          <div className="divider" />
-          <span className="secondaryText">
+          <span className=" primary-Text ">About Us</span>
+          <span className="highlightText">Value We Bring to You</span>
+          {/* <div className="divider" /> */}
+          <span className="secondary-Text">
             Altair Attic Limited is at the forefront of technological innovation, delivering cutting-edge solutions in smart home automation, software development, IoT, and embedded systems
             integration. Our mission is to seamlessly integrate advanced
             technology into everyday life, making it accessible, efficient, and

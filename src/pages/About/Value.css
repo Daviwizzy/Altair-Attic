@@ -53,22 +53,22 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.primaryText {
+.primary-Texts {
   color: #1f3e72;
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 3rem; /* Reduced margin-bottom for better alignment with the orange line */
 }
 
-.orangeLine {
+/* .orangeLine {
   width: 140px;
   height: 5px;
   background-color: orange;
   margin-bottom: 1rem;
   margin-top: -1.6rem;
-}
+} */
 
-.secondaryText {
+.secondary-Texts {
   color: #333;
   font-size: 1.2rem;
   line-height: 1.5;
@@ -106,11 +106,11 @@
     margin-top: 1rem;
   }
 
-  .primaryText {
+  .primary-Texts {
     font-size: 1.5rem;
   }
 
-  .secondaryText,
+  .secondary-Texts,
   .values-list li {
     font-size: 1rem;
   }
