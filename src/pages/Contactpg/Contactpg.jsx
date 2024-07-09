@@ -6,7 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
 import "./Contactpg.css";
 
-const Contact = () => {
+const Contactpg = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [recaptchaError, setRecaptchaError] = useState(false); // State to track ReCAPTCHA error
   const {
@@ -139,4 +139,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contactpg;

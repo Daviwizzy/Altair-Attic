@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Career.css';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
+
 
 
 const Section = ({ title, subtitle, image, altText }) => (
@@ -72,7 +71,6 @@ const Career = () => {
 
   return (
     <div className="career">
-      <Header />
       <div className="career-content">
         <div className="sections">
           {sections.map((section, index) => (
@@ -97,7 +95,6 @@ const Career = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
