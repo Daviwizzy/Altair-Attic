@@ -60,7 +60,9 @@ const Form = () => {
 
   return (
     <div className="contact-form-wrapper paddings flex-col-center">
-      <div className="contact-header flex-center">
+
+        usrfvbwtcbgw3u4tv3t
+      {/* <div className="contact-header flex-center">
         <div className="contact-images">
           <img src="/contact.jpeg" alt="Phone" className="contact-image" />
           <img
@@ -134,7 +136,7 @@ const Form = () => {
         {successMessage && (
           <span className="success-message">{successMessage}</span>
         )}
-      </form>
+      </form> */}
     </div>
   );
 };
