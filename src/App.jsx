@@ -11,13 +11,12 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="/" element={<Layout />}>
-          <Route path="about" element={<WebsiteAb />} />
-          <Route path="contact us" element={<Contactpg />} />
-          {/* <Route path="career" element={<Career />} /> */}
-          <Route path="service/:id" element={<ServiceDetail />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<WebsiteAb />} />
+        <Route path="/contact" element={<Contactpg />} />
+        {/* Uncomment below if you have a Career component */}
+        {/* <Route path="/career" element={<Career />} /> */}
+        <Route path="/service/:id" element={<ServiceDetail />} />
       </Routes>
     </BrowserRouter>
   );
