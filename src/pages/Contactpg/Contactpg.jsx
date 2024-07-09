@@ -8,7 +8,7 @@ import "./Contactpg.css";
 
 const Contactpg = () => {
   const [successMessage, setSuccessMessage] = useState("");
-  const [recaptchaError, setRecaptchaError] = useState(false); // State to track ReCAPTCHA error
+  const [recaptchaError, setRecaptchaError] = useState(false);
   const {
     register,
     handleSubmit,
@@ -17,9 +17,9 @@ const Contactpg = () => {
     formState: { errors, isSubmitting },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     if (!data.recaptcha) {
-      setRecaptchaError(true); // Set error state if ReCAPTCHA is not completed
+      setRecaptchaError(true);
       return;
     }
 
@@ -31,22 +31,22 @@ const Contactpg = () => {
       message: data.message,
     };
 
-    emailjs
-      .send(
+    try {
+      const response = await emailjs.send(
         "service_hoyq6xf",
         "template_2zbt1dc",
         emailData,
         "xTVbm4gOtEOKY8Lx9"
-      )
-      .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        reset(); // Reset form fields on success
-        setSuccessMessage("Your message has been sent successfully!");
-        setRecaptchaError(false); // Reset ReCAPTCHA error state
-      })
-      .catch((err) => {
-        console.error("FAILED...", err);
-      });
+      );
+
+      console.log("Email sent:", response);
+
+      reset(); // Reset form fields
+      setSuccessMessage("Your message has been sent successfully!");
+      setRecaptchaError(false);
+    } catch (error) {
+      console.error("Email send error:", error);
+    }
   };
 
   const handlePhoneChange = (value) => {
@@ -55,7 +55,7 @@ const Contactpg = () => {
 
   const handleRecaptchaChange = (value) => {
     setValue("recaptcha", value);
-    setRecaptchaError(false); // Reset ReCAPTCHA error state when user interacts with ReCAPTCHA
+    setRecaptchaError(false);
   };
 
   return (
@@ -127,10 +127,10 @@ const Contactpg = () => {
         />
         <button type="submit" className="button" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send Message"}
-        </button>{" "}<br/>
+        </button>
         {recaptchaError && (
           <span className="error-message">Please complete the reCAPTCHA</span>
-        )}<br/>
+        )}
         {successMessage && (
           <span className="success-message">{successMessage}</span>
         )}
