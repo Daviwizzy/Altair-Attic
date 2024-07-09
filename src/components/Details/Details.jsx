@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.css";
+import "./Details.css";
 import { MdCall } from "react-icons/md";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 

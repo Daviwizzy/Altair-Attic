@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import data from "../../utils/slider.json";
 import useHeaderColor from "../../hooks/useHeaderColor";
 import "./ServiceDetail.css";
-import Contact from "../../components/Contact/Contact";
+// import Contact from "../../components/Contact/Contact";
 
 
 const ServiceDetail = () => {

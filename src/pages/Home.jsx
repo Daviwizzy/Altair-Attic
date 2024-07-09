@@ -1,13 +1,12 @@
 import React from "react";
 import Companies from "../components/Companies/Companies";
-import Contact from "../components/Contact/Contact";
+import Details from "../components/Details/Details";
 import Footer from "../components/Footer/Footer";
 import GetStarted from "../components/GetStarted/GetStarted";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Services from "../components/Services/Services";
 import Value from "../components/Value/Value";
-import Email from "../components/Email/Email";
 import MissionVision from "../components/MissionVision";
 import AboutUs from "../components/About/About";
 import "../App.css";
@@ -25,7 +24,7 @@ function Home() {
       <MissionVision />
       <Services />
       <Value />
-      <Contact />
+      <Details />
       {/* <Email /> */}
       <GetStarted />
       <Footer />
