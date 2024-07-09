@@ -45,8 +45,8 @@ const Header = () => {
             style={getMenuStyles(menuOpened)}
           >
             <Link to="/">Home</Link>
-            <Link to="/contact">Contact</Link>
             <Link to="/about">About us</Link>
+            <Link to="/contact">Contact</Link>
           </div>
         </OutsideClickHandler>
 
