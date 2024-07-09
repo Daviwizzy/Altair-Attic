@@ -4,7 +4,7 @@ import Layout from "./LayOut";
 import WebsiteAb from "./pages/About/WebsiteAb";
 import ServiceDetail from "./pages/Services/ServiceDetail";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact/Contact";
+import Contact from "./pages/Contactpg/Contactpg";
 
 export default function App() {
   return (

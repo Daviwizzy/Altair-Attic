@@ -4,7 +4,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
-import "./Contact.css";
+import "./Contactpg.css";
 
 const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");

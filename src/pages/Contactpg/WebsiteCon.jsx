@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactForm from './Contact';
+import ContactForm from './Contactpg';
 
 const WebsiteCon = () => {
   return (
