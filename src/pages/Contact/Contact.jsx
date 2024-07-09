@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
-import "./Contactpg.css";
+import "./Contact.css";
 
-const Contactpg = () => {
+const Contact = () => {
   const [successMessage, setSuccessMessage] = useState("");
-  const [recaptchaError, setRecaptchaError] = useState(false);
   const {
     register,
     handleSubmit,
@@ -18,11 +16,6 @@ const Contactpg = () => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    if (!data.recaptcha) {
-      setRecaptchaError(true);
-      return;
-    }
-
     const emailData = {
       to_name: "Altair Attic Limited",
       from_name: data.name,
@@ -43,7 +36,6 @@ const Contactpg = () => {
 
       reset(); // Reset form fields
       setSuccessMessage("Your message has been sent successfully!");
-      setRecaptchaError(false);
     } catch (error) {
       console.error("Email send error:", error);
     }
@@ -51,11 +43,6 @@ const Contactpg = () => {
 
   const handlePhoneChange = (value) => {
     setValue("phone", value);
-  };
-
-  const handleRecaptchaChange = (value) => {
-    setValue("recaptcha", value);
-    setRecaptchaError(false);
   };
 
   return (
@@ -117,19 +104,13 @@ const Contactpg = () => {
           placeholder="Type message..."
           className="textarea-field"
         ></textarea>
-        {errors.message && (
-          <span className="error-message">Message is required</span>
-        )}
-        <ReCAPTCHA
-          sitekey="6LctmQYqAAAAADJCigSgo_GI7KfumMnlTRvmZJFS"
-          onChange={handleRecaptchaChange}
-          className="recaptcha-container"
-        />
+
         <button type="submit" className="button" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Send Message"}
         </button>
-        {recaptchaError && (
-          <span className="error-message">Please complete the reCAPTCHA</span>
+        <br/>
+        {errors.message && (
+          <span className="error-message">Message is required</span>
         )}
         {successMessage && (
           <span className="success-message">{successMessage}</span>
@@ -139,4 +120,4 @@ const Contactpg = () => {
   );
 };
 
-export default Contactpg;
+export default Contact;

@@ -1,11 +1,16 @@
+/* Contact.css */
+
+/* Contact Form Wrapper */
 .contact-form-wrapper {
   border-radius: 8px;
   box-shadow: var(--shadow);
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
+  background-color: #ffffff;
 }
 
+/* Contact Header */
 .contact-header {
   display: flex;
   align-items: center;
@@ -14,18 +19,20 @@
   margin-bottom: 2rem;
 }
 
+/* Contact Images */
 .contact-images {
   display: flex;
   gap: 1rem;
 }
 
 .contact-image {
-  width: 100%; 
-  max-width: 300px; 
+  width: 100%;
+  max-width: 300px;
   height: auto;
   border-radius: 8px;
 }
 
+/* Contact Details */
 .contact-details {
   text-align: left;
 }
@@ -41,10 +48,12 @@
   margin-bottom: 0.5rem;
 }
 
+/* Contact Form */
 .contact-form {
   width: 100%;
 }
 
+/* Input and Textarea Fields */
 .input-field,
 .textarea-field {
   width: 100%;
@@ -53,7 +62,7 @@
   border: 1px solid var(--lightBlue);
   border-radius: 4px;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .input-field:focus,
@@ -67,22 +76,26 @@
   resize: vertical;
 }
 
+/* Phone Input Container */
 .phone-input-container {
   margin-bottom: 1rem;
 }
 
-.secondaryText {
-  color: var(--secondary);
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Success Message */
+.success-message {
+  color: green;
   font-size: 1rem;
+  margin-top: 1rem;
 }
 
-.primaryText {
-  color: var(--primary);
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
+/* Button */
 .button {
   font-weight: 500;
   padding: 0.6rem 1.4rem;
@@ -98,11 +111,7 @@
   transform: scale(1.1);
 }
 
-.recaptcha-container {
-  margin-bottom: 1rem;
-}
-
-/* Media Queries for Tablet and iPad */
+/* Media Queries */
 @media (max-width: 1024px) {
   .contact-form-wrapper {
     padding: 1.5rem;
@@ -142,7 +151,6 @@
   }
 }
 
-/* Media Queries for Mobile */
 @media (max-width: 768px) {
   .contact-form-wrapper {
     padding: 1rem;

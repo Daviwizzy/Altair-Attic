@@ -4,7 +4,7 @@ import Layout from "./LayOut";
 import WebsiteAb from "./pages/About/WebsiteAb";
 import ServiceDetail from "./pages/Services/ServiceDetail";
 import Home from "./pages/Home";
-import Form from "./pages/Form/Form";
+import Contact from "./pages/Contact/Contact";
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<WebsiteAb />} />
-        <Route path="/Form" element={<Form/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
         <Route path="/service/:id" element={<ServiceDetail />} />
       </Routes>
     </BrowserRouter>
