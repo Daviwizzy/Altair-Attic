@@ -47,7 +47,7 @@ const Header = () => {
             <Link to="/">Home</Link>
             <Link to="/about">About us</Link>
             {/* <Link to="/career">Career</Link> */}
-            <Link to="/contact-us">Contact</Link>
+            <Link to="/Form">Contact</Link>
           </div>
         </OutsideClickHandler>
 

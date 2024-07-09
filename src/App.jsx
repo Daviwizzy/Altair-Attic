@@ -4,8 +4,7 @@ import Layout from "./LayOut";
 import WebsiteAb from "./pages/About/WebsiteAb";
 import ServiceDetail from "./pages/Services/ServiceDetail";
 import Home from "./pages/Home";
-import Contactpg from "./pages/Contactpg/Contactpg";
-import Career from "./pages/Career/Career";
+import Form from "./pages/Form/Form";
 
 export default function App() {
   return (
@@ -13,9 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<WebsiteAb />} />
-        <Route path="/contact" element={<Contactpg />} />
-        {/* Uncomment below if you have a Career component */}
-        {/* <Route path="/career" element={<Career />} /> */}
+        <Route path="/Form" element={<Form/>}/>
         <Route path="/service/:id" element={<ServiceDetail />} />
       </Routes>
     </BrowserRouter>
