@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from '../components/SEO';
 import Companies from "../components/Companies/Companies";
 import Details from "../components/Details/Details";
 import Footer from "../components/Footer/Footer";
@@ -10,10 +11,19 @@ import Value from "../components/Value/Value";
 import MissionVision from "../components/MissionVision";
 import AboutUs from "../components/About/About";
 import "../App.css";
+import Subsidiary from "../components/subsidiary/subsidiary";
+import ExSer from "../components/Work/Work";
 
 function Home() {
   return (
     <div className="App">
+      <SEO
+        title="Home - Altair Attic Limited"
+        description="Welcome to Altair Attic Limited, a leading provider of innovative tech solutions that simplify lives and enhance business operations."
+        keywords="Altair Attic Limited, smart home automation, software development, IoT, IT skills"
+        url="https://www.altairattic.com/"
+        image="https://www.altairattic.com/home.jpg"
+      />
       <div>
         <div className="white-gradient-left" />
         <div className="white-gradient-right" />
@@ -21,11 +31,13 @@ function Home() {
         <Hero />
       </div>
       <AboutUs />
+      
       <MissionVision />
-      <Services />
+      {/* <Services /> */}
+      {/* <Subsidiary/> */}
+      <ExSer/>
       <Value />
       <Details />
-      {/* <Email /> */}
       <GetStarted />
       <Footer />
     </div>

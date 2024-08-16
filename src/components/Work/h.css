@@ -1,0 +1,180 @@
+/* body {
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .page-title {
+    background-size: cover;
+    padding: 50px 0;
+  }
+  
+  .auto-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .title-outer {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .page-breadcrumb {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .page-breadcrumb li {
+    margin: 0 5px;
+  }
+  
+  .page-breadcrumb li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .services-details {
+    padding: 50px 0;
+  }
+  
+  .service-sidebar {
+    margin-bottom: 30px;
+  }
+  
+  .service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-list li {
+    margin-bottom: 10px;
+  }
+  
+  .service-list li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .service-list li a .fas {
+    margin-right: 10px;
+  }
+  
+  .banner-widget {
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .banner-widget .shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    z-index: 1;
+  }
+  
+  .banner-widget .content-box {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .banner-widget .icon-box {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .services-details__content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .services-details__content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .services-details__content p {
+    margin-bottom: 15px;
+  }
+  
+  .feature-list {
+    margin-top: 30px;
+  }
+  
+  .feature-list .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  .feature-list .column {
+    width: 50%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+  
+  .single-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .single-item .icon-box {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .single-item .title {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .accordion-box {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0 0;
+  }
+  
+  .accordion.block {
+    margin-bottom: 10px;
+  }
+  
+  .acc-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .acc-btn .icon {
+    font-size: 14px;
+  }
+  
+  .acc-content {
+    display: none;
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .acc-content.current {
+    display: block;
+  }
+   */

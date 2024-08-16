@@ -5,7 +5,7 @@ import { getMenuStyles } from "../../utils/common";
 import useHeaderColor from "../../hooks/useHeaderColor";
 import OutsideClickHandler from "react-outside-click-handler";
 import { Link } from "react-router-dom";
-import logo from "/logo.png";
+import logo from "/black-logo.png";
 
 const Header = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -32,6 +32,7 @@ const Header = () => {
         <Link to="/">
           <img src={logo} alt="logo" width={100} />
         </Link>
+        
 
         {/* menu */}
         <OutsideClickHandler
@@ -40,12 +41,12 @@ const Header = () => {
           }}
         >
           <div
-            // ref={menuRef}
             className="flexCenter h-menu"
             style={getMenuStyles(menuOpened)}
           >
             <Link to="/">Home</Link>
             <Link to="/about">About us</Link>
+            {/* <Link to="/Ser">Services</Link> */}
             <Link to="/Contact">Contact</Link>
           </div>
         </OutsideClickHandler>

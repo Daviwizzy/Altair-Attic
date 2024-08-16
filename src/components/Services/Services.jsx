@@ -12,8 +12,8 @@ const Services = () => {
     <div id="Services" className="s-wrapper">
       <div className="paddings innerWidth s-container">
         <div className="flexColStart s-head">
-          <span className="primaryText">Our Businesses</span>
-          <div className="orange-underline"></div>
+          <span className="primaryText"><u className="under">Our Subsidiary</u></span>
+          {/* <div className="orange-underline"></div> */}
         </div>
 
         <Swiper {...sliderSettings}>

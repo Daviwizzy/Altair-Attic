@@ -5,7 +5,7 @@ import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   const handleCallClick = () => {
-    window.location.href = "tel:02112314514";
+    window.location.href = "tel:2347077195098";
   };
 
   const handleChatClick = () => {
@@ -28,7 +28,9 @@ const Contact = () => {
           <span className="orangeText">Our Contact Us</span>
           <span className="primaryText">Easy to contact us</span>
           <span className="secondaryText">
-            We are always ready to assist by providing the best services for you. We believe that a great environment can enhance your life.
+            We provide the best services, believing advanced technology enhances
+            life. At Altair Attic Limited, we bridge the gap between technology
+            and everyday life.
           </span>
 
           <div className="flexColStart contactModes">
@@ -77,7 +79,10 @@ const Contact = () => {
                     <span className="secondaryText">Altair Attic</span>
                   </div>
                 </div>
-                <div className="flexCenter button" onClick={handleVideoCallClick}>
+                <div
+                  className="flexCenter button"
+                  onClick={handleVideoCallClick}
+                >
                   Chat now
                 </div>
               </div>

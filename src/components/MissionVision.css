@@ -1,5 +1,5 @@
 .mission-vision-section {
-  background-color: #f0f8ff;
+  /* background-color: #f0f8ff; */
   padding: 3rem 1rem;
 }
 
@@ -18,7 +18,7 @@
   max-width: 400px;
   padding: 1.5rem;
   margin: 1rem 0;
-  background-color: white;
+  background-color: #f0f8ff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;

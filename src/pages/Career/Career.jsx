@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import './Career.css';
-
-
 
 const Section = ({ title, subtitle, image, altText }) => (
   <div className="section">
@@ -50,11 +49,7 @@ const sections = [
 const jobs = [
   { title: 'Backend Developer', image: 'backdev.jpeg', altText: 'Backend Developer' },
   { title: 'Frontend Developer', image: 'frontdev.jpeg', altText: 'Frontend Developer' },
-  { title: 'Full Stack Developer (On-site)', image: 'fullstack.jpeg', altText: 'Full Stack Developer' },
-  // { title: 'Growth Manager(Tech)', image: 'growthmanager.jpeg', altText: 'Growth Manager(Tech)' },
-  // { title: 'Marketer', image: 'marketer.jpeg', altText: 'Marketer' },
-  // { title: 'Regional Business Lead', image: 'regionalbusiness.jpeg', altText: 'Regional Business Lead' },
-  // { title: 'Regional Sales Lead', image: 'regionalsales.jpeg', altText: 'Regional Sales Lead' }
+  { title: 'Full Stack Developer (On-site)', image: 'fullstack.jpeg', altText: 'Full Stack Developer' }
 ];
 
 const Career = () => {
@@ -71,6 +66,19 @@ const Career = () => {
 
   return (
     <div className="career">
+      <Helmet>
+        <title>Careers - Altair Attic Limited</title>
+        <meta name="description" content="Explore career opportunities at Altair Attic Limited and join our team of innovative professionals." />
+        <meta name="keywords" content="Careers at Altair Attic Limited, job opportunities, tech jobs" />
+        <meta property="og:title" content="Careers - Altair Attic Limited" />
+        <meta property="og:description" content="Explore career opportunities at Altair Attic Limited and join our team of innovative professionals." />
+        <meta property="og:url" content="https://www.altairattic.com/careers" />
+        <meta property="og:image" content="https://www.altairattic.com/images/careers.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Careers - Altair Attic Limited" />
+        <meta name="twitter:description" content="Explore career opportunities at Altair Attic Limited and join our team of innovative professionals." />
+        <meta name="twitter:image" content="https://www.altairattic.com/images/careers.jpg" />
+      </Helmet>
       <div className="career-content">
         <div className="sections">
           {sections.map((section, index) => (
